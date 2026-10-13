@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>French Riot — Next demonstration: October 17, Arc de Triomphe, Paris</title>
+<meta name="description" content="Next demonstration: October 17 at the Arc de Triomphe, Paris. Countdown, practical information and updates.">
+<link rel="preload" as="image" href="assets/soulevement.png">
+<link rel="preload" as="image" href="assets/feu.png">
+<link rel="preload" as="image" href="assets/ruines.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-head" id="head">
+  <a class="brand" href="#home" aria-label="French Riot, back to top">
+    <svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#2b57d8"/><rect x="1" width="1" height="2" fill="#f7f7f7"/><rect x="2" width="1" height="2" fill="#e3262f"/></svg>
+    FRENCH RIOT
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="#home" aria-current="true">Home</a>
+    <a href="#about">About</a>
+    <a href="#info">Info</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home" aria-label="Next demonstration">
+    <div class="stage" id="stage">
+      <div class="layer on" id="layerA"></div>
+      <div class="layer" id="layerB"></div>
+      <div class="clone clone-r" id="cloneR" aria-hidden="true"></div>
+      <div class="clone clone-c" id="cloneC" aria-hidden="true"></div>
+    </div>
+
+    <canvas class="noise" id="noise" aria-hidden="true"></canvas>
+    <div class="flash" id="flash" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <canvas id="embers" aria-hidden="true"></canvas>
+
+    <div class="copy" id="copy">
+      <p class="kicker" id="kicker">Next demonstration</p>
+      <h1 class="date">October 17</h1>
+      <p class="where">Arc de Triomphe — Paris</p>
+      <div class="count" role="timer" aria-label="Countdown to October 17">
+        <div class="unit"><b id="cd-d">00</b><span>Days</span></div>
+        <div class="unit"><b id="cd-h">00</b><span>Hours</span></div>
+        <div class="unit"><b id="cd-m">00</b><span>Minutes</span></div>
+        <div class="unit"><b id="cd-s">00</b><span>Seconds</span></div>
+      </div>
+      <p class="state-caption" id="caption">The people rise up</p>
+    </div>
+
+    <p class="hint" id="hint"><span class="hint-dot" aria-hidden="true"></span>Click anywhere on the image</p>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="block" id="about" aria-labelledby="h-about">
+    <div class="wrap reveal">
+      <div>
+        <h2 id="h-about">About</h2>
+        <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div>
+        <p><strong>French Riot</strong> is a citizen information page announcing the next major demonstration in Paris: where it takes place, when it starts and how to get there.</p>
+        <p>On October 17, the people will gather on Place Charles de Gaulle, at the foot of the Arc de Triomphe, to make their voice heard. Peaceful, determined, impossible to ignore.</p>
+        <p>Everything lives on this single page. When a detail changes, it is updated here first — check back before you travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INFO ================= -->
+  <section class="block alt" id="info" aria-labelledby="h-info">
+    <div class="wrap reveal">
+      <div>
+        <h2 id="h-info">Info</h2>
+        <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div>
+        <dl>
+          <dt>Date</dt><dd>Saturday, October 17, 2026</dd>
+          <dt>Place</dt><dd>Arc de Triomphe, Place Charles de Gaulle, Paris 8th</dd>
+          <dt>Gathering</dt><dd>From 2:00 PM (time to be confirmed)</dd>
+          <dt>Getting there</dt><dd>Metro lines 1, 2 and 6 or RER A — Charles de Gaulle – Étoile station</dd>
+          <dt>Updates</dt><dd>Posted on this page as soon as they are confirmed</dd>
+        </dl>
+        <p class="small">Times and routes can change. Follow official announcements and instructions on the day. This is a declared demonstration — stay peaceful and look out for each other.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 French Riot — Citizen information page</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
