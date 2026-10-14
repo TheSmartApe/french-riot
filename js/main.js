@@ -47,6 +47,26 @@
   tick();
   setInterval(tick, 1000);
 
+  /* ---------- Contract address: 1-click copy ---------- */
+  const caBtn = document.getElementById('ca');
+  const CA = caBtn.dataset.ca;
+  caBtn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(CA); }
+    catch {
+      const ta = document.createElement('textarea');
+      ta.value = CA;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+    const addr = caBtn.querySelector('.ca-addr');
+    const label = addr.textContent;
+    caBtn.classList.add('copied');
+    addr.textContent = 'Copied!';
+    setTimeout(() => { caBtn.classList.remove('copied'); addr.textContent = label; }, 1600);
+  });
+
   /* ---------- TV static sound (Web Audio, no file needed) ---------- */
   let audioCtx = null, noiseBuf = null;
   function ensureAudio(){

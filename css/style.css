@@ -159,6 +159,22 @@ nav a:hover{border-color:rgba(255,255,255,.55)}
 }
 .unit span{display:block;margin-top:.2rem;font-size:clamp(.5rem,1.3vw,.78rem);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#c6cede}
 
+/* --- adresse de contrat (copie en 1 clic) --- */
+.ca{display:flex;align-items:center;gap:.6rem;margin-top:clamp(.9rem,2.4vh,1.4rem);
+  padding:.42rem .7rem .42rem .85rem;cursor:pointer;pointer-events:auto;
+  font:500 .82rem ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.03em;color:#dfe5f2;
+  background:var(--glass);border:1px solid rgba(255,255,255,.2);border-radius:999px;backdrop-filter:blur(6px);
+  transition:border-color .2s,transform .15s,color .2s}
+.ca:hover{border-color:rgba(255,255,255,.55);transform:translateY(-1px)}
+.ca:active{transform:translateY(0) scale(.97)}
+.ca-tag{font:600 .62rem var(--font);letter-spacing:.14em;color:#fff;padding:.2rem .55rem;border-radius:999px;
+  background:linear-gradient(90deg,var(--blue),var(--red))}
+.ca-addr{opacity:.9}
+.ca svg{width:15px;height:15px;opacity:.75;flex:none}
+.ca.copied{border-color:#3ddc84;color:#3ddc84}
+.ca.copied svg{opacity:1}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em;word-break:break-all}
+
 .state-caption{margin:clamp(1.1rem,3vh,1.8rem) 0 0;font-size:clamp(.78rem,1.7vw,1rem);font-weight:500;
   letter-spacing:.24em;text-transform:uppercase;color:#ffd9d0;opacity:0;animation:captionIn 1.2s .5s ease both;
   padding:.45rem 1rem;border-radius:999px;background:rgba(5,6,11,.5);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(4px)}
